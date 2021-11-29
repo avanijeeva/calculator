@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"  />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+  
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Calculator</h1>
+            <!-- text_box -->
+            <div class="first">
+                <input type="text" name="result" class="result" id="result" value="" placeholder="Result" readonly />
+                <input type="button" value="C" onclick="clearBox()" id="clear" />
+
+            </div>
+            <!-- buttons -->
+
+            <div class="second">
+                <input type="button" value="()" onclick="displayValue('()')" />
+                <input type="button" value="%" onclick="displayValue('%')" />
+                <input type="button" value=">" onclick="removeElement()" />
+                <input type="button" value="/" onclick="displayValue('/')" />
+            </div>
+            <div class="third">
+                <input type="button" value="7" onclick="displayValue('7')" id="seven" />
+                <input type="button" value="8" onclick="displayValue('8')" id="eight" />
+                <input type="button" value="9" onclick="displayValue('9')" id="nine" />
+                <input type="button" value="*" onclick="displayValue('*')" />
+            </div>
+            <div class="fourth">
+                <input type="button" value="4" onclick="displayValue('4')" id="four" />
+                <input type="button" value="5" onclick="displayValue('5')" id="five" />
+                <input type="button" value="6" onclick="displayValue('6')" id="six" />
+                <input type="button" value="-" onclick="displayValue('-')" />
+            </div>
+            <div class="fifth">
+                <input type="button" value="1" onclick="displayValue('1')" id="one" />
+                <input type="button" value="2" onclick="displayValue('2')" id="two" />
+                <input type="button" value="3" onclick="displayValue('3')" id="three" />
+                <input type="button" value="+" onclick="displayValue('+')" />
+            </div>
+            <div class="sixth">
+                <input type="button" value="00" onclick="displayValue('00')" id="zerozero" />
+                <input type="button" value="0" onclick="displayValue('0')" id="zero" />
+                <input type="button" value="." onclick="displayValue('.')" />
+                <input type="button" value="=" onclick="evaluateExpression()" />
+            </div>
+        </div>
+    </div>
+    <!-- Fontawesome Script -->
+    <script src="https://kit.fontawesome.com/f28b055962.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
